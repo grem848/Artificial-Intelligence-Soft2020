@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>Fake news detector</h1>
+	<hr>
+	<h2>Hello {{ name }}!</h2>
+
+	<label>Fill out the form below and the AI will try to predict if it is a true or a fake news story</label>
+	<br>
+	<br>
+	<form method="POST">
+		<label>Write your name below</label>
+		<br>
+		<input type="text" placeholder="name..." required name="name" />
+		<br>
+		<br>
+		<label>Write the name of the news organization that provided you with the story etc. Reuters, CNN, BBC, BT, Berlingske</label>
+		<br>
+		<label>HINT: try writing Reuters, </label>
+		<br>
+		<input type="text" placeholder="source..." required name="source" />
+		<br>
+		<br>
+		<label>Write a true or fake news story below</label>
+		<br>
+		<textarea type="text" placeholder="news story..." required name="newsstory" ></textarea>
+		<br>
+		<br>
+		<input type="submit" value="Predict my news story" />
+	</form>
+	<h2>{{ name }} your news story is {{ webprediction }}</h2>
+	<br>
+	<label>Your news story</label>
+	<p>{{ source + " " + newsstory }}</p>
+</body>
+
+</html>
