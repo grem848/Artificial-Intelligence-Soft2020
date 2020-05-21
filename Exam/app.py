@@ -26,8 +26,8 @@ def index():
     if request.method == 'POST' and 'newsstory' in request.form:
         newsstory = request.form['newsstory']
         
-    if request.method == 'POST' and 'newsstory' and 'source' in request.form:
-        webprediction = loaded_model_web.predict([source + " " + newsstory])[0]
+    if request.method == 'POST' and 'newsstory' in request.form:
+        webprediction = loaded_model_web.predict([source + " - " + newsstory])[0]
     
     return render_template('index.html', name=name, webprediction=webprediction, source=source, newsstory=newsstory)
 

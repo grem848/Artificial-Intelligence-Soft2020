@@ -21,11 +21,9 @@
 		<input type="text" placeholder="name..." required name="name" />
 		<br>
 		<br>
-		<label>Write the name of the news organization that provided you with the story etc. Reuters, CNN, BBC, BT, Berlingske</label>
+		<label>(OPTIONAL) Write the name of the news organization that provided you with the story etc. WASHINGTON (Reuters), NEW YORK (CNN), LONDON (BBC), COPENHAGEN (BT), ODENSE (TV2 News)</label>
 		<br>
-		<label>HINT: try writing Reuters, </label>
-		<br>
-		<input type="text" placeholder="source..." required name="source" />
+		<input type="text" placeholder="source..." name="source" />
 		<br>
 		<br>
 		<label>Write a true or fake news story below</label>
@@ -38,7 +36,7 @@
 	<h2>{{ name }} your news story is {{ webprediction }}</h2>
 	<br>
 	<label>Your news story</label>
-	<p>{{ source + " " + newsstory }}</p>
+	<p>{{ source + " - " + newsstory }}</p>
 </body>
 
 </html>
