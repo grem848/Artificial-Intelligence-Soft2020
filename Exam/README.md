@@ -29,8 +29,10 @@ It is based on continuous values, meaning the values can be infinite and not cou
 Regression uses a method of measurement of root mean square error.
 
 <br>
+<br>
 
-## WARNING: It takes quite some time to run all cells! 
+## WARNING: It takes quite some time to run all cells!
+### Expect execution times of minimum 15 minutes
 ### Since everything is pickled I recommend just running the app.py file
 #### How?
 * Just type this in your prefered console or terminal
@@ -41,7 +43,6 @@ python app.py
 * or run the last code cell of the project containing the command !python app.py
 <br>
 
-<br>
 
 ## Everything is located in the [AI-Exam-Project-2020.ipynb](AI-Exam-Project-2020.ipynb) file
 ## For the webapp's frontend (index.html) click [here](templates/index.html)
